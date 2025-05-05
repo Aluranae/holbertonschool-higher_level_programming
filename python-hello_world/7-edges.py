@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# This script manipulates string slicing to extract parts of a combined word
-
 word = "Holberton"
 word_first_3 = word[:3]
 word_last_2 = word[-2:]
