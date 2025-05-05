@@ -2,4 +2,4 @@
 
 # This script prints "The Zen of Python" by Tim Peters using a built-in module
 
-import this  # noqa: F401
+import this
