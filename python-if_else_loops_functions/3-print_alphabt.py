@@ -2,4 +2,5 @@
 for i in range(97, 123):
     if i == ord('e') or i == ord('q'):
         continue
-    print(f"{chr(i)}", end="")
+    else:
+        print(f"{chr(i)}", end="")
