@@ -13,7 +13,7 @@ def add(a, b):
 
 
 def sub(a, b):
-    """My substraction function
+    """My subtraction function
 
     Args:
         a: first integer
@@ -48,4 +48,4 @@ def div(a, b):
     Returns:
         The return value. a / b
     """
-    return (a / b)
+    return int(a / b)
