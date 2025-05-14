@@ -4,3 +4,11 @@ The ``3-say_my_name`` module
 Using ``say_my_name``
 -------------------
 
+Import function from module:
+    >>> add_integer = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+>>> say_my_name("Jon")
+My name is Jon 
