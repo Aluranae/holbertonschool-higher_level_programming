@@ -10,12 +10,8 @@ def say_my_name(first_name, last_name=""):
     """Prints the full name in the format 'My name is <first> <last>'.
 Validates that both inputs are strings.
 Raises TypeError if any input is invalid."""
-
-    # Étape 2 : Vérifier que 'first_name' est bien une chaîne
-    # ➤ Sinon, lever TypeError avec le message imposé
-
-    # Étape 3 : Vérifier que 'last_name' est aussi une chaîne
-    # ➤ Sinon, lever TypeError avec le message imposé
-
-    # Étape 4 : Afficher "My name is <first_name> <last_name>"
-    # ➤ Ne pas ajouter d'espace en double si last_name est vide (à gérer implicitement par print)
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+    print("My name is {:s} {:s}".format(first_name, last_name))
