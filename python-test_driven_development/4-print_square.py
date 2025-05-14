@@ -10,13 +10,9 @@ def print_square(size):
     """Prints a square made of '#' characters.
 Validates that size is a positive integer.
 Raises TypeError or ValueError depending on input."""
-
-    # Étape 2 : Vérifier que size est bien un entier
-    # ➤ Sinon, lever TypeError avec le message imposé
-
-    # Étape 3 : Vérifier que size est >= 0
-    # ➤ Sinon, lever ValueError avec le message imposé
-
-    # Étape 4 : Afficher size lignes, chacune contenant size caractères '#'
-    # ➤ Une ligne = une chaîne de caractères
-    # ➤ Utiliser une boucle pour répéter l'affichage
+    if type(size) is not int:
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+    for i in range(size):
+        print("#" * size)
