@@ -6,10 +6,6 @@ Accepts a default empty value for the last name.
 Uses only built-in Python functionality, no imports allowed."""
 
 
-# Étape 1 : Définir la fonction avec deux paramètres
-# ➤ 'first_name' est obligatoire
-# ➤ 'last_name' est optionnel avec valeur par défaut = ""
-
 def say_my_name(first_name, last_name=""):
     """Prints the full name in the format 'My name is <first> <last>'.
 Validates that both inputs are strings.
