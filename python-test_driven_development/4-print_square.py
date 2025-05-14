@@ -15,6 +15,4 @@ Raises TypeError or ValueError depending on input."""
     if size < 0:
         raise ValueError("size must be >= 0")
     for i in range(size):
-        for j in range(size):
-            print("#", end="")
-        print()
+        print("#" * size)
