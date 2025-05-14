@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """This module defines the add_integer function.
 It allows the addition of two numbers.
 Inputs must be integers or floats.
