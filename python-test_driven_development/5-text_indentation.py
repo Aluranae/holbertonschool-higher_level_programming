@@ -15,7 +15,6 @@ Strips leading and trailing spaces from each printed line."""
     if type(text) is not str:
         raise TypeError("text must be a string")
     # Étape 3 : Initialiser une chaîne temporaire pour accumuler les caractères
-    
 
     # Étape 4 : Parcourir chaque caractère du texte original
         # ➤ Ajouter chaque caractère dans le tampon
