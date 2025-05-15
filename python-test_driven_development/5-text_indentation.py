@@ -29,4 +29,4 @@ Strips leading and trailing spaces from each printed line."""
             buffer += c
 
     if buffer.strip():
-        print(buffer.strip())
+        print(buffer.strip(), end="")
