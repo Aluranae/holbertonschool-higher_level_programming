@@ -15,11 +15,18 @@ Strips leading and trailing spaces from each printed line."""
 
     buffer = ""
     for c in text:
-        buffer += c
-        print(f"[DEBUG] BUFFER = '{buffer}' | CHAR = '{c}'")
         if c in ('.', '?', ':'):
+            buffer += c
             print(buffer.strip())
             print()
             buffer = ""
+        elif c == '\n':
+            if buffer.strip():
+                print(buffer.strip())
+            print()
+            buffer = ""
+        else:
+            buffer += c
+
     if buffer.strip():
         print(buffer.strip())
