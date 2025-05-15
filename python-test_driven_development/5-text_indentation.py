@@ -20,4 +20,4 @@ Strips leading and trailing spaces from each printed line."""
             print()
             buffer = ""
     if buffer:
-        print(buffer.strip())
+        print(buffer.strip(), end="")
