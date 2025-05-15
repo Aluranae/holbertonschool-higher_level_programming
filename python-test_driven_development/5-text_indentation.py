@@ -12,18 +12,14 @@ Adds two newlines after each target character.
 Strips leading and trailing spaces from each printed line."""
     if type(text) is not str:
         raise TypeError("text must be a string")
+
     buffer = ""
-    skip_space = False
     for c in text:
-        if skip_space and c in (" ", "\n"):
-            continue
         buffer += c
+        print(f"[DEBUG] BUFFER = '{buffer}' | CHAR = '{c}'")
         if c in ('.', '?', ':'):
             print(buffer.strip())
             print()
             buffer = ""
-            skip_space = True
-            continue
-        skip_space = False
-    if buffer:
-        print(buffer.strip(), end="")
+    if buffer.strip():
+        print(buffer.strip())
