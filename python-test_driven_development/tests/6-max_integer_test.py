@@ -1,10 +1,9 @@
+#!/usr/bin/python3
 """
 Unittests for max_integer() function.
 Covers common cases, edge cases, and empty input.
 Follows Python's unittest module conventions.
 """
-
-#!/usr/bin/python3
 
 # Étape 1 : importer le module unittest
 # Étape 2 : importer la fonction max_integer depuis le bon module (à adapter si elle est dans un autre fichier)
