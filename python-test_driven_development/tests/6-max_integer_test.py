@@ -1,15 +1,8 @@
 #!/usr/bin/python3
+"""Unittest for max_integer([..])
 """
-Unittests for max_integer() function.
-Covers common cases, edge cases, and empty input.
-Follows Python's unittest module conventions.
-"""
-
-
 import unittest
-
 max_integer = __import__('6-max_integer').max_integer
-
 
 class TestMaxInteger(unittest.TestCase):
 
