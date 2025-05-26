@@ -1,4 +1,4 @@
-# python-inheritance
+# Python - Inheritance
 
 ## Requirements
 
