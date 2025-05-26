@@ -13,4 +13,3 @@ class MyList(list):
         new_list = []
         new_list = sorted(self)
         print(new_list)
-    
