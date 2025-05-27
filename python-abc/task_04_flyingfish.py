@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Module defining Fish, Bird, and FlyingFish classes using multiple inheritance."""
+"""Module defining Fish, Bird, and FlyingFish\
+    classes using multiple inheritance."""
 
 
 class Fish:
