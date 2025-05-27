@@ -4,6 +4,7 @@
 
 
 from abc import ABC, abstractmethod
+from math import pi
 
 
 class Shape(ABC):
@@ -29,11 +30,11 @@ class Circle(Shape):
 
     def area(self):
         """Return the area of the circle."""
-        return 3.14 * self.__radius ** 2
+        return pi * self.__radius ** 2
 
     def perimeter(self):
         """Return the perimeter of the circle."""
-        return 2 * (3.14 * self.__radius)
+        return 2 * (pi * self.__radius)
 
 
 class Rectangle(Shape):
@@ -56,7 +57,5 @@ class Rectangle(Shape):
 def shape_info(shape):
     """Prints the area and perimeter of any shape implementing\
         area() and perimeter()."""
-    shape.area()
     print("Area:", shape.area())
-    shape.perimeter()
     print("Perimeter:", shape.perimeter())
