@@ -10,14 +10,11 @@ and save structured data to a CSV file.
 Author: [Your Name Here]
 """
 
-# Étape 1 : Importer les modules nécessaires
-# - Importer requests pour effectuer les requêtes HTTP
-# - Importer csv pour sauvegarder les données en CSV
+
 import requests
 import csv
 
 
-# Étape 2 : Définir la fonction fetch_and_print_posts()
 def fetch_and_print_posts():
     # - Effectuer une requête GET vers l'API JSONPlaceholder
     response = requests.get("https://jsonplaceholder.typicode.com/posts")
@@ -33,7 +30,6 @@ def fetch_and_print_posts():
             print(post["title"])
 
 
-# Étape 3 : Définir la fonction fetch_and_save_posts()
 def fetch_and_save_posts():
     list_dict = []
     # - Effectuer une requête GET vers l'API JSONPlaceholder
@@ -56,5 +52,6 @@ def fetch_and_save_posts():
         writer = csv.DictWriter(posts, fieldnames=["id", "title", "body"])
         # - Écrire l'en-tête (fieldnames)
         writer.writeheader()
-        # - Écrire les lignes du fichier CSV à partir de la liste de dictionnaires
+        # - Écrire les lignes du fichier CSV à partir de la liste
+        # de dictionnaires
         writer.writerows(list_dict)
