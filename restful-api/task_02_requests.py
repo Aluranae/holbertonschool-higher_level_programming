@@ -27,7 +27,7 @@ def fetch_and_print_posts():
     if response.status_code == 200:
         # - Parser la réponse en JSON
         data = response.json()
-        #  - Itérer sur la liste des posts
+        # - Itérer sur la liste des posts
         for post in data:
             # - Pour chaque post, afficher le titre uniquement
             print(post["title"])
@@ -50,11 +50,11 @@ def fetch_and_save_posts():
                 "body": post["body"]
             }
             list_dict.append(dict)
-#     - Ouvrir un fichier posts.csv en mode écriture
+    # - Ouvrir un fichier posts.csv en mode écriture
     with open("posts.csv", "w") as posts:
         # - Utiliser csv.DictWriter pour écrire les données
         writer = csv.DictWriter(posts, fieldnames=["id", "title", "body"])
-#     - Écrire l'en-tête (fieldnames)
+        # - Écrire l'en-tête (fieldnames)
         writer.writeheader()
-#     - Écrire les lignes du fichier CSV à partir de la liste de dictionnaires
+        # - Écrire les lignes du fichier CSV à partir de la liste de dictionnaires
         writer.writerows(list_dict)
