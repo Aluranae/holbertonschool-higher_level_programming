@@ -22,7 +22,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(b"Hello, this is a simple API!".encode())
+            self.wfile.write(b"Hello, this is a simple API!")
 
         elif self.path == "/data":
             self.send_response(200)
@@ -40,7 +40,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(b"OK".encode())
+            self.wfile.write(b"OK")
 
         elif self.path == "/info":
             self.send_response(200)
@@ -57,7 +57,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(b"Endpoint not found".encode())
+            self.wfile.write(b"Endpoint not found")
 
 
 server_address = ('', 8000)
