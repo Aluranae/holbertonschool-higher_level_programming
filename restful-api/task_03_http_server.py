@@ -13,13 +13,16 @@ import http.server
 import json
 
 
-class MyRequestHandler(http.server.BaseHTTPRequestHandler):
+class MyRequestHandler(http.server.BaseHTTPRequestHandle):
     def do_GET(self):
+        """
+        Handle GET requests to the server.
+        """
         if self.path == "/":
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write("Hello, this is a simple API!".encode())
+            self.wfile.write(b"Hello, this is a simple API!".encode())
 
         elif self.path == "/data":
             self.send_response(200)
@@ -37,7 +40,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write("OK".encode())
+            self.wfile.write(b"OK".encode())
 
         elif self.path == "/info":
             self.send_response(200)
@@ -54,7 +57,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write("Endpoint not found.".encode())
+            self.wfile.write(b"Endpoint not found".encode())
 
 
 server_address = ('', 8000)
