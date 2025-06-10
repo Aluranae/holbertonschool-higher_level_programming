@@ -13,7 +13,7 @@ import http.server
 import json
 
 
-class MyRequestHandler(http.server.BaseHTTPRequestHandle):
+class MyRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         """
         Handle GET requests to the server.
