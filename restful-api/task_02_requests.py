@@ -18,7 +18,7 @@ def fetch_and_print_posts():
     Fetches posts from a specified base URL and prints their titles.
     """
     response = requests.get("https://jsonplaceholder.typicode.com/posts")
-    print("Status code:", response.status_code)
+    print("Status Code:", response.status_code)
     if response.status_code == 200:
         data = response.json()
         for post in data:
@@ -40,7 +40,7 @@ def fetch_and_save_posts():
                 "body": post["body"]
             }
             list_dict.append(dict)
-    with open("posts.csv", "w") as posts:
+    with open("posts.csv", "w", newline='', encoding='utf-8') as posts:
         writer = csv.DictWriter(posts, fieldnames=["id", "title", "body"])
         writer.writeheader()
         writer.writerows(list_dict)
