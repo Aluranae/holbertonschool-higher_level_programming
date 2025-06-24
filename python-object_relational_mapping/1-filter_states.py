@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script qui affiche tous les États dont le nom commence par N (majuscule) depuis une base MySQL"""
+"""Script qui affiche tous les États dont le nom commence par N (majuscule)
+depuis une base MySQL"""
 
 import sys            # Permet d'accéder aux arguments de la ligne de commande
 import MySQLdb        # Permet de se connecter à une base de données MySQL
@@ -22,7 +23,8 @@ if __name__ == "__main__":
     # Création d'un curseur qui servira à exécuter des requêtes SQL
     cursor = db.cursor()
 
-    # Requête SQL : sélectionne les états dont le nom commence par 'N', triés par id croissant
+    # Requête SQL : sélectionne les états dont le nom commence par 'N',
+    # triés par id croissant
     cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     # Récupération de toutes les lignes résultantes de la requête
