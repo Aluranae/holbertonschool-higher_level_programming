@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Script qui affiche tous les États de la table 'states'
 depuis une base MySQL donnée"""
 
