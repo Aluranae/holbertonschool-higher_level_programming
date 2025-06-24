@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # Requête SQL : sélectionne les états dont le nom commence par 'N',
     # triés par id croissant
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+        "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
 
     # Récupération de toutes les lignes résultantes de la requête
     results = cursor.fetchall()
