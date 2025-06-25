@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # Création du moteur SQLAlchemy
     engine = create_engine(
-        f"mysql+mysqldb://{username}:{password}@localhost/{db_name}",
+        "mysql+mysqldb://{}:{}@localhost/{}".format(username, password, db_name),
         pool_pre_ping=True
     )
 

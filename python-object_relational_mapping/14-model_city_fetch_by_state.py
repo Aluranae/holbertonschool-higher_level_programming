@@ -32,4 +32,7 @@ if __name__ == "__main__":
 
     # Affichage de chaque résultat au format demandé
     for city, state in results:
-        print(f"{state.name}: ({city.id}) {city.name}")
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
+
+    # Fermeture propre de la session
+    session.close()
