@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script that gets a State object by name from the database using SQLAlchemy"""
+"""Script that gets a State object by
+name from the database using SQLAlchemy"""
 
 import sys  # Pour lire les arguments passés en ligne de commande
 
