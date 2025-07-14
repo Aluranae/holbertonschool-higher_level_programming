@@ -46,7 +46,7 @@ def generate_invitations(template, attendees):
             value = guest.get(key)
             if value is None:
                 value = "N/A"
-            personalized_text = personalized_text.replace("{{{}}}".format(key))
+            personalized_text = personalized_text.replace("{{{}}}".format(key), str(value))
 
         file_name = f"output_{i}.txt"
         with open(file_name, "w", encoding="utf-8") as f:
