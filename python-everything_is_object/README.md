@@ -74,7 +74,10 @@ You must publish it on **Medium** or **LinkedIn**, and share the link on **Linke
 
 When you're done, don’t forget to paste here:
 - Your blog article URL
+- [Medium](https://medium.com/@Aluranae/python-mutable-immutable-everything-is-object-914aa5faa11c)
+
 - Your LinkedIn post URL
+- [LinkedIn](https://www.linkedin.com/posts/benjamin-estrada-880b06297_pythonmutable-immutable-everything-is-activity-7353380829588332544-pT2A/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfjoWABQhDobpxQG_X41v8grgLc1NtVwLc)
 
 ---
 
